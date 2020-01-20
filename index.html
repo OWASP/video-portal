@@ -1,17 +1,74 @@
-<html>
+---
 
-<body>
-<h1>OWASP Video Portal v0.000001</h1>
+layout: videofront
+title: OWASP Videos
+tags: videos
+og-url: https://videos.owasp.org
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLpr-xdpM8wG-5-pyxni2HaKWmAjEFKclI" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+---
+
+<h1>OWASP Video Portal v0.0002</h1>
+
+
+<div id="slickme">
+  <div><iframe src="https://www.youtube.com/embed/videoseries?list=PLpr-xdpM8wG-5-pyxni2HaKWmAjEFKclI" frameborder="0" allow="encrypted-media" allowfullscreen></iframe></div>
+  <div><iframe src="https://www.youtube.com/embed/videoseries?list=PLpr-xdpM8wG9X8a_fqWx39ZBJJqiukQmC" frameborder="0" allow="encrypted-media" allowfullscreen></iframe></div>
+  <div><iframe src="https://www.youtube.com/embed/videoseries?list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ" frameborder="0" allow="encrypted-media" allowfullscreen></iframe></div>
+  <div><iframe src="https://www.youtube.com/embed/videoseries?list=PLpr-xdpM8wG-mJASEZ4TqFYtiRgasd-ki" frameborder="0" allow="encrypted-media" allowfullscreen></iframe></div>
+  <div><iframe src="https://www.youtube.com/embed/videoseries?list=PLI9RITMnVbyg-OEn2vbsDnzWi9jGd6_5u" frameborder="0" allow="encrypted-media" allowfullscreen></iframe></div>
+  <div><iframe src="https://www.youtube.com/embed/videoseries?list=PLpr-xdpM8wG9Pl8MLCdkU1Dq34Cl0NPOc" frameborder="0" allow="encrypted-media" allowfullscreen></iframe></div>
+</div>
+
+<style>
+.slick-slide {
+    width: 560px;
+    height: 315px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.slick-prev:before { 
+    color:#1d7bd7 !important;
+}
+
+.slick-next:before { 
+    color:#1d7bd7 !important;
+}
+#slickme iframe {
+    width: 560px;
+    height: 315px;
+}
+
+</style>
+
+<script>
+$(document).ready(function() {
+
+$('#slickme').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+  variableWidth: true,
+  arrows: true,
+  dots: true
+});
+
+
+
+});
+</script>
+
 <br/><br/>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLpr-xdpM8wG9X8a_fqWx39ZBJJqiukQmC" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+
+
+<div style="right: 15px; position:relative; width:100%; height:0px; padding-bottom:56.25%;">
+    <iframe style="position:absolute; left:0; top:0; width:100%; height:100%"
+        src="https://www.youtube.com/embed/?listType=user_uploads&list=OWASPGLOBAL">
+    </iframe>
+</div>
+
+
 <br/><br/>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 <br/><br/>
-
-</body>
-
-</html>
