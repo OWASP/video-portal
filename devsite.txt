@@ -1,0 +1,5 @@
+This fixes jekyll by making it uses www2.owasp.org as base url.
+https://github.com/OWASP/www--site-theme/blob/1453369d7313954e2dec049b4f9e4f32cc746678/_includes/member.html#L2
+
+In the future we might be better to have the site on the main domain so that the header/footer works properly.
+
