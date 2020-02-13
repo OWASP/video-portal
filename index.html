@@ -7,7 +7,7 @@ og-url: https://videos.owasp.org
 
 ---
 
-<h1>OWASP Video Portal <span style="color: #FEFEFE;">v0.003</span></h1>
+<h1>OWASP Video Portal <span style="color: #FEFEFE;">v0.004</span></h1>
 
 
 <div id="slickme">
@@ -17,6 +17,9 @@ og-url: https://videos.owasp.org
 </div>
 
 <style>
+h1 {
+	font-family: "roboto",sans-serif;
+}
 .slick-prev:before { 
     color:#1d7bd7 !important;
 }
@@ -47,6 +50,8 @@ og-url: https://videos.owasp.org
 	margin-right: 5px;
 }
 
+
+
 </style>
 
 <script>
@@ -74,19 +79,60 @@ $('#slickme2').slick({
   dots: true
 });
 
+$('#slickme3').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+  variableWidth: true,
+  arrows: true,
+  dots: true
+});
+
 });
 </script>
 
-<br/><br/>
+<br/>
 
-<div style="right: 15px; position:relative; width:100%; height:0px; padding-bottom:56.25%;">
-    <iframe style="position:absolute; left:0; top:0; width:100%; height:100%"
-        src="https://www.youtube.com/embed/videoseries?list=PLpr-xdpM8wG9g8l21uzfgyx4xAJ9aY7e7">
-    </iframe>
+<div style="margin: auto; text-align:center;">
+<h3>Keynote: Diversity And Inclusion - Not Just A Gender Gap by Vandana Verma
+</h3>
+<iframe width="896" height="504" src="https://www.youtube-nocookie.com/embed/hhQvPAzN-Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+<br/><br/>
+<style>
+#slickme3 .slick-slide {
+    width: 560px;
+    height: 315px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.featuredprojecttitle {
+	border: 2px groove grey;
+}
+.featuredprojecttitle:hover {
+	border: 2px groove blue;
+}
+
+</style>
+
+<h3>Featured Project</h3>
+<div id="slickme3">
+  <div style="width: 160px;" class="featuredprojecttitle"><a href="https://www.youtube.com/c/OWASPDevSlop" target="_blank"><img src="https://videos.owasp.org/assets/images/devslop.png"/></a></div>
+  <div><a href="https://www.youtube.com/watch?v=rn7Z44W4Sic" target="_blank"><img src="https://videos.owasp.org/assets/images/devslopfeatured2.jpg"/></a></div>
+  <div style="width: 600px;"><a href="https://www.youtube.com/watch?v=exzz7ar71I4" target="_blank"><img src="https://videos.owasp.org/assets/images/devslopfeatured1.jpg"/></a></div>
+  <div><a href="https://www.youtube.com/watch?v=JA-o6Bm5pkk" target="_blank"><img src="https://videos.owasp.org/assets/images/devslopfeatured3.png"/></a></div>
+  <div><a href="https://www.youtube.com/watch?v=rAwxFw25x3E" target="_blank"><img src="https://videos.owasp.org/assets/images/devslopfeatured4.jpg"/></a></div>
+</div>
 
 <br/><br/>
+
+<div style="width: 50%; margin-left: auto; margin-right: auto;">
+	<a href="https://www.youtube.com/OWASPGLOBAL/" target="_blank"><img src="https://videos.owasp.org/assets/images/owasp_youtube.png" /></a>
+</div>
+
 <br/><br/>
 
 <div id="slickme2">
@@ -98,12 +144,6 @@ $('#slickme2').slick({
   <div><iframe src="https://www.youtube.com/embed/videoseries?list=PLpr-xdpM8wG-mJASEZ4TqFYtiRgasd-ki" frameborder="0" allow="encrypted-media" allowfullscreen></iframe></div>
 </div>
 
-
-<br/><br/>
-
-<div style="width: 50%; margin-left: auto; margin-right: auto;">
-	<a href="https://www.youtube.com/OWASPGLOBAL/" target="_blank"><img src="https://videos.owasp.org/assets/images/owasp_youtube.png" /></a>
-</div>
 
 <br/><br/>
 
